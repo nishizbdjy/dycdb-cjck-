@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        随机十六进制
+    </title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // 字符串十六进制
+
+    function sljz() {
+        var color = '#'
+        var jz = '0123456789abcdef';
+        for (var i = 0; i < 6; i++) {
+            var r = Math.floor(Math.random() * 16)
+            color += jz[r]
+        }
+        return color
+    }
+    //  调用
+    // console.log(sljz())
+// 另一种十六进制数值都一样
+//  var i = color+jz[r]+jz[r]+jz[r]+jz[r]+jz[r]+jz[r]
+</script>
+
+</html>

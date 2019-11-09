@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> rgb</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // 创建一个对象
+    var sjys = {};
+//   使用一个随机数     求n~m之间的随机数
+  sjys.suijishu = function (m,n){  
+// 返回值 向下取整    倍数=(最大值-最小值+1)-最小值
+   return Math.floor(Math.random()*(m-n+1)+n);
+}
+//  rgb 颜色
+// 调用对象 随机数 属性
+sjys.suijiys = function(max,min){
+var r = sjys.suijishu(max,min);
+var g = sjys.suijishu(max,min);
+var b = sjys.suijishu(max,min);
+// 和成随机数颜色
+var rgb = '('+r+','+g+','+b+')';
+return rgb ;
+}
+// 调用rgb颜色
+var rgb = sjys.suijiys(255,0)
+// 输出
+// console.log(rgb);
+// document.body.style.backgroundColor = 'rgb'+rgb;
+</script>
+</html>
